@@ -86,7 +86,7 @@ const LoginCover = () => {
               <div className='mb-1'>
                 <div className='d-flex justify-content-between'>
                   <Label className='form-label' for='login-password'>
-                    Password
+                    Contraseña
                   </Label>
                   <Link to='/pages/forgot-password-cover'>
                     <small>Forgot Password?</small>
