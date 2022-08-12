@@ -17,7 +17,7 @@ export default [
       },
       {
         id: 'eCommerceDash',
-        title: 'eCommerce',
+        title: 'KPIS',
         icon: <Circle size={12} />,
         navLink: '/dashboard/ecommerce'
       }

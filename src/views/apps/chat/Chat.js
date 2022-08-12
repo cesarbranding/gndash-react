@@ -155,7 +155,7 @@ const ChatLog = props => {
           <MessageSquare />
         </div>
         <h4 className='sidebar-toggle start-chat-text' onClick={handleStartConversation}>
-          Start Conversation
+          Iniciar Conversación
         </h4>
       </div>
       {Object.keys(selectedUser).length ? (
@@ -229,7 +229,7 @@ const ChatLog = props => {
             </InputGroup>
             <Button className='send' color='primary'>
               <Send size={14} className='d-lg-none' />
-              <span className='d-none d-lg-block'>Send</span>
+              <span className='d-none d-lg-block'>Enviar</span>
             </Button>
           </Form>
         </div>

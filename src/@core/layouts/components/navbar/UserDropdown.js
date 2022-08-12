@@ -50,24 +50,24 @@ const UserDropdown = () => {
       <DropdownMenu end>
         <DropdownItem tag={Link} to='/pages/profile'>
           <User size={14} className='me-75' />
-          <span className='align-middle'>Profile</span>
+          <span className='align-middle'>Perfil</span>
         </DropdownItem>
         <DropdownItem tag={Link} to='/apps/email'>
           <Mail size={14} className='me-75' />
-          <span className='align-middle'>Inbox</span>
+          <span className='align-middle'>Tickets</span>
         </DropdownItem>
         <DropdownItem tag={Link} to='/apps/todo'>
           <CheckSquare size={14} className='me-75' />
-          <span className='align-middle'>Tasks</span>
+          <span className='align-middle'>Solicitudes</span>
         </DropdownItem>
         <DropdownItem tag={Link} to='/apps/chat'>
           <MessageSquare size={14} className='me-75' />
-          <span className='align-middle'>Chats</span>
+          <span className='align-middle'>Soporte</span>
         </DropdownItem>
         <DropdownItem divider />
         <DropdownItem tag={Link} to='/pages/account-settings'>
           <Settings size={14} className='me-75' />
-          <span className='align-middle'>Settings</span>
+          <span className='align-middle'>Ajustes</span>
         </DropdownItem>
         <DropdownItem tag={Link} to='/pages/pricing'>
           <CreditCard size={14} className='me-75' />
@@ -79,7 +79,7 @@ const UserDropdown = () => {
         </DropdownItem>
         <DropdownItem tag={Link} to='/login' onClick={() => dispatch(handleLogout())}>
           <Power size={14} className='me-75' />
-          <span className='align-middle'>Logout</span>
+          <span className='align-middle'>Cerrar sesión</span>
         </DropdownItem>
       </DropdownMenu>
     </UncontrolledDropdown>

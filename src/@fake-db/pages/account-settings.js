@@ -6,12 +6,12 @@ const data = {
       username: 'johndoe',
       fullName: 'John Doe',
       email: 'granger007@hogward.com',
-      company: 'PIXINVENT'
+      company: 'GRUPO NORTE'
     },
     info: {
       bio: '',
       dob: null,
-      country: 'USA',
+      country: 'Chile',
       website: '',
       phone: 6562542568
     },

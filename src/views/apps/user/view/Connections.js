@@ -49,13 +49,13 @@ const socialAccounts = [
   {
     linked: true,
     title: 'Twitter',
-    url: 'https://twitter.com/pixinvent',
+    url: 'https://twitter.com/gruponortecl',
     logo: require('@src/assets/images/icons/social/twitter.png').default
   },
   {
     linked: true,
     title: 'Linkedin',
-    url: 'https://www.linkedin.com/company/pixinvent/',
+    url: 'https://www.linkedin.com/company/gruponorte-cl/',
     logo: require('@src/assets/images/icons/social/linkedin.png').default
   },
   {

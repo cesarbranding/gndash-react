@@ -44,7 +44,7 @@ const NotificationDropdown = () => {
       )
     },
     {
-      title: <h6 className='fw-bolder me-auto mb-0'>System Notifications</h6>,
+      title: <h6 className='fw-bolder me-auto mb-0'>Notificaciones de Sistema</h6>,
       switch: (
         <div className='form-check form-switch'>
           <Input type='switch' name='customSwitch' id='exampleCustomSwitch' defaultChecked />
@@ -162,7 +162,7 @@ const NotificationDropdown = () => {
       <DropdownMenu end tag='ul' className='dropdown-menu-media mt-0'>
         <li className='dropdown-menu-header'>
           <DropdownItem className='d-flex' tag='div' header>
-            <h4 className='notification-title mb-0 me-auto'>Notifications</h4>
+            <h4 className='notification-title mb-0 me-auto'>Notificaciones</h4>
             <Badge tag='div' color='light-primary' pill>
               6 New
             </Badge>
@@ -171,7 +171,7 @@ const NotificationDropdown = () => {
         {renderNotificationItems()}
         <li className='dropdown-menu-footer'>
           <Button color='primary' block>
-            Read all notifications
+            Marcar todas como leídas
           </Button>
         </li>
       </DropdownMenu>
