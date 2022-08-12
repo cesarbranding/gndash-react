@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 
 // ** Third Party Components
 import axios from 'axios'
-import { Package } from 'react-feather'
+import { Package, UserMinus } from 'react-feather'
 
 // ** Custom Components
 import StatsWithAreaChart from '@components/widgets/stats/StatsWithAreaChart'
@@ -68,10 +68,10 @@ const OrdersReceived = ({ kFormatter, warning }) => {
 
   return data !== null ? (
     <StatsWithAreaChart
-      icon={<Package size={21} />}
+      icon={<UserMinus size={21} />}
       color='warning'
       stats={kFormatter(data.analyticsData.orders)}
-      statTitle='Orders Received'
+      statTitle='Colaboradores Perdidos'
       options={options}
       series={data.series}
       type='area'

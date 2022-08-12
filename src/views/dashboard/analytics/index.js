@@ -150,7 +150,7 @@ const AnalyticsDashboard = () => {
             <CardHeader>
               <div className='d-flex align-items-center'>
                 <List className='user-timeline-title-icon' />
-                <CardTitle tag='h4'>User Timeline</CardTitle>
+                <CardTitle tag='h4'>Timeline de Proceso</CardTitle>
               </div>
             </CardHeader>
             <CardBody>

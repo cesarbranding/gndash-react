@@ -82,13 +82,13 @@ const AvgSessions = props => {
           >
             <div className='session-info mb-1 mb-lg-0'>
               <h2 className='fw-bold mb-25'>{kFormatter(data.sessions)}</h2>
-              <CardText className='fw-bold mb-2'>Avg Sessions</CardText>
+              <CardText className='fw-bold mb-2'> Colaboradores Capacitados</CardText>
               <h5 className='font-medium-2'>
                 <span className='text-success me-50'>{data.growth}</span>
-                <span className='fw-normal'>vs last 7 days</span>
+                <span className='fw-normal'>vs últimos 7 días</span>
               </h5>
             </div>
-            <Button color='primary'>View Details</Button>
+            <Button color='primary'>Ver detalles</Button>
           </Col>
           <Col
             sm={{ size: 6, order: 2 }}
@@ -97,7 +97,7 @@ const AvgSessions = props => {
           >
             <UncontrolledDropdown className='chart-dropdown'>
               <DropdownToggle color='' className='bg-transparent btn-sm border-0 p-50'>
-                Last 7 days
+                Últimos 7 días
               </DropdownToggle>
               <DropdownMenu end>
                 {data.last_days.map(item => (
@@ -113,19 +113,19 @@ const AvgSessions = props => {
         <hr />
         <Row className='pt-50'>
           <Col className='mb-2' md='6' sm='12'>
-            <p className='mb-50'>Goal: ${data.goal}</p>
+            <p className='mb-50'>Objetivo: {data.goal}</p>
             <Progress className='avg-session-progress mt-25' value='50' />
           </Col>
           <Col className='mb-2' md='6' sm='12'>
-            <p className='mb-50'>Users: {kFormatter(data.users)}</p>
+            <p className='mb-50'>Usuarios: {kFormatter(data.users)}</p>
             <Progress className='avg-session-progress progress-bar-warning mt-25' value='60' />
           </Col>
           <Col md='6' sm='12'>
-            <p className='mb-50'>Retention: {data.retention}%</p>
+            <p className='mb-50'>Retención: {data.retention}%</p>
             <Progress className='avg-session-progress progress-bar-danger mt-25' value='70' />
           </Col>
           <Col md='6' sm='12'>
-            <p className='mb-50'>Duration: {data.duration}yr</p>
+            <p className='mb-50'>Duración: {data.duration}año</p>
             <Progress className='avg-session-progress progress-bar-success mt-25' value='80' />
           </Col>
         </Row>

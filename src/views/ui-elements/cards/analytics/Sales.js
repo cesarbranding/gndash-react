@@ -91,9 +91,9 @@ const Sales = props => {
       <CardHeader className='d-flex justify-content-between align-items-start pb-1'>
         <div>
           <CardTitle className='mb-25' tag='h4'>
-            Sales
+            Reclutamiento
           </CardTitle>
-          <CardText>Last 6 months</CardText>
+          <CardText>Últimos 6 meses</CardText>
         </div>
 
         <UncontrolledDropdown className='chart-dropdown'>
@@ -112,13 +112,13 @@ const Sales = props => {
         <div className='d-inline-block me-1'>
           <div className='d-flex align-items-center'>
             <Circle size={13} className='text-primary me-50' />
-            <h6 className='mb-0'>Sales</h6>
+            <h6 className='mb-0'>Seleccionados</h6>
           </div>
         </div>
         <div className='d-inline-block'>
           <div className='d-flex align-items-center'>
             <Circle size={13} className='text-info me-50' />
-            <h6 className='mb-0'>Visits</h6>
+            <h6 className='mb-0'>Descartados</h6>
           </div>
         </div>
         <Chart options={options} series={series} type='radar' height={300} />

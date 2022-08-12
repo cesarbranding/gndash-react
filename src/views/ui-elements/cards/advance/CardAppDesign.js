@@ -53,7 +53,7 @@ const CardAppDesign = () => {
     <Card className='card-app-design'>
       <CardBody>
         <Badge color='light-primary'>03 Sep, 20</Badge>
-        <CardTitle className='mt-1 mb-75'>App design</CardTitle>
+        <CardTitle className='mt-1 mb-75'>Proyecto Abastible</CardTitle>
         <CardText className='font-small-2 mb-2'>
           You can Find Only Post and Quotes Related to IOS like ipad app design, iphone app design
         </CardText>
@@ -79,7 +79,7 @@ const CardAppDesign = () => {
           ))}
         </div>
         <div className='d-grid'>
-          <Button color='primary'>Join Team</Button>
+          <Button color='primary'>Unirse al equipo</Button>
         </div>
       </CardBody>
     </Card>
