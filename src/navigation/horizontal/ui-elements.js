@@ -40,7 +40,7 @@ export default [
           },
           {
             id: 'cardStatistics',
-            title: 'Statistics',
+            title: 'Estadísticas',
             icon: <Circle />,
             navLink: '/cards/statistics'
           },

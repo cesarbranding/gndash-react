@@ -38,7 +38,7 @@ export default [
       },
       {
         id: 'cardStatistics',
-        title: 'Statistics',
+        title: 'Estadísticas',
         icon: <Circle size={12} />,
         navLink: '/cards/statistics'
       },

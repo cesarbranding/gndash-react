@@ -342,7 +342,7 @@ export const searchArr = [
         id: 43,
         target: 'cardStatistics',
         isBookmarked: false,
-        title: 'Card Statistics',
+        title: 'Card Estadísticas',
         icon: 'Smartphone',
         link: '/cards/statistics'
       },

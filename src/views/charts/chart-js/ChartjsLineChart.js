@@ -111,7 +111,7 @@ const ChartjsLineChart = ({ labelColor, gridLineColor, warningColorShade, lineCh
       <CardHeader className='d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column'>
         <div>
           <CardTitle className='mb-75' tag='h4'>
-            Statistics
+            Estadísticas
           </CardTitle>
           <CardSubtitle>Commercial networks and enterprises</CardSubtitle>
         </div>
