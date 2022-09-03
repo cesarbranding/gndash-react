@@ -1,5 +1,5 @@
 // ** Icons Import
-import { Type, Eye, CreditCard, Circle, Briefcase, Box, Layout, FolderPlus, Loader, Watch } from 'react-feather'
+import { FolderPlus, Loader, Watch } from 'react-feather'
 
 export default [
   {

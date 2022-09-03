@@ -14,7 +14,7 @@ export default [
   },
   {
     id: 'knowledgeBase',
-    title: 'Knowledge Base',
+    title: 'Documentación',
     icon: <Sunrise size={12} />,
     permissions: ['admin', 'editor'],
     navLink: '/pages/knowledge-base',
