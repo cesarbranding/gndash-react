@@ -3,11 +3,11 @@ import { PieChart, Circle } from 'react-feather'
 
 export default [
   {
-    header: 'Charts'
+    header: 'Estadísticas'
   },
   {
     id: 'charts',
-    title: 'Charts',
+    title: 'Analíticas',
     badge: 'light-danger',
     badgeText: '3',
     icon: <PieChart size={20} />,
