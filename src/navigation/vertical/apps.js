@@ -1,9 +1,45 @@
 // ** Icons Import
-import { Mail, MessageSquare, CheckSquare, Calendar, FileText, Circle, ShoppingCart, User, Shield } from 'react-feather'
+import { Mail, Sun, Clipboard,  FilePlus, FileMinus, MessageSquare, CheckSquare, Calendar, FileText, Circle, ShoppingCart, Server, User, Shield, Users } from 'react-feather'
 
-export default [
+export default [  
   {
-    header: 'Apps & Pages'
+    header: 'Colaboradores'
+  },
+  {
+    id: 'listadp-dtBasic',
+    title: 'Listado',
+    icon: <Users size={12} />,
+    navLink: '/datatables/basic'
+  },
+  {
+    id: 'cpd-tablesReactstrap',
+    title: 'CPD',
+    icon: <Clipboard size={20} />,
+    navLink: '/tables/reactstrap'
+  },
+  {
+    id: 'ca-tablesReactstrap',
+    title: 'Contratos Activos',
+    icon: <FileText size={20} />,
+    navLink: '/'
+  },
+  {
+    id: 'altas-tablesReactstrap',
+    title: 'Altas de Contrato',
+    icon: <FilePlus size={20} />,
+    navLink: '/'
+  },
+  {
+    id: 'bajas-tablesReactstrap',
+    title: 'Bajas de Contrato',
+    icon: <FileMinus size={20} />,
+    navLink: '/'
+  },
+  {
+    id: 'vaca-tablesReactstrap',
+    title: 'Vacaciones',
+    icon: <Sun size={20} />,
+    navLink: '/'
   },
   {
     id: 'email',
