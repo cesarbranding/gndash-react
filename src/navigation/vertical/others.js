@@ -1,5 +1,5 @@
 // ** Icons Import
-import { Circle,  Folder, Shield, MessageSquare, Mail, Sunrise, HelpCircle, Key } from 'react-feather'
+import { Circle,  Folder, Shield, MessageSquare, Mail, HelpCircle, Key } from 'react-feather'
 
 export default [
   {
@@ -15,7 +15,7 @@ export default [
   {
     id: 'knowledgeBase',
     title: 'Documentación',
-    icon: <Sunrise size={12} />,
+    icon: <Folder size={12} />,
     permissions: ['admin', 'editor'],
     navLink: '/pages/knowledge-base',
     parentOf: ['/pages/knowledge-base/category/questions', '/pages/knowledge-base/category']
@@ -58,7 +58,7 @@ export default [
     title: 'Ticket',
     icon: <Mail size={20} />,
     navLink: '/apps/email'
-  },
+  }
   // {
   //   id: 'menuLevels',
   //   title: 'Menu Levels',
@@ -96,15 +96,15 @@ export default [
   //   navLink: '#',
   //   disabled: true
   // },
-  {
-    id: 'documentation',
-    title: 'Documentación',
-    icon: <Folder size={20} />,
-    externalLink: true,
-    newTab: true,
-    navLink: 'https://pixinvent.com/demo/vuexy-react-admin-dashboard-template/documentation',
-    disabled: true
-  }
+  // {
+  //   id: 'documentation',
+  //   title: 'Documentación',
+  //   icon: <Folder size={20} />,
+  //   externalLink: true,
+  //   newTab: true,
+  //   navLink: 'https://pixinvent.com/demo/vuexy-react-admin-dashboard-template/documentation',
+  //   disabled: true
+  // }
   // {
   //   id: 'raiseSupport',
   //   title: 'Raise Support',
