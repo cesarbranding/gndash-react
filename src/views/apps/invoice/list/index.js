@@ -49,7 +49,7 @@ const CustomHeader = ({ handleFilter, value, handleStatusValue, statusValue, han
           className='actions-right d-flex align-items-center justify-content-lg-end flex-lg-nowrap flex-wrap mt-lg-0 mt-1 pe-lg-1 p-0'
         >
           <div className='d-flex align-items-center'>
-            <label htmlFor='search-invoice'>Search</label>
+            <label htmlFor='search-invoice'>Buscar</label>
             <Input
               id='search-invoice'
               className='ms-50 me-2 w-100'
