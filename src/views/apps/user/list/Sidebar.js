@@ -125,7 +125,7 @@ const SidebarNewUsers = ({ open, toggleSidebar }) => {
     <Sidebar
       size='lg'
       open={open}
-      title='New User'
+      title='Nuevo Colaborador'
       headerClassName='mb-1'
       contentClassName='pt-0'
       toggleSidebar={toggleSidebar}
@@ -134,25 +134,25 @@ const SidebarNewUsers = ({ open, toggleSidebar }) => {
       <Form onSubmit={handleSubmit(onSubmit)}>
         <div className='mb-1'>
           <Label className='form-label' for='fullName'>
-            Full Name <span className='text-danger'>*</span>
+            Nombre Completo <span className='text-danger'>*</span>
           </Label>
           <Controller
             name='fullName'
             control={control}
             render={({ field }) => (
-              <Input id='fullName' placeholder='John Doe' invalid={errors.fullName && true} {...field} />
+              <Input id='fullName' placeholder='Javier Torres' invalid={errors.fullName && true} {...field} />
             )}
           />
         </div>
         <div className='mb-1'>
           <Label className='form-label' for='username'>
-            Username <span className='text-danger'>*</span>
+            Rut Usuario <span className='text-danger'>*</span>
           </Label>
           <Controller
             name='username'
             control={control}
             render={({ field }) => (
-              <Input id='username' placeholder='johnDoe99' invalid={errors.username && true} {...field} />
+              <Input id='username' placeholder='15.987.467-3' invalid={errors.username && true} {...field} />
             )}
           />
         </div>
@@ -167,42 +167,42 @@ const SidebarNewUsers = ({ open, toggleSidebar }) => {
               <Input
                 type='email'
                 id='userEmail'
-                placeholder='john.doe@example.com'
+                placeholder='jtorres@gruponorte.cl'
                 invalid={errors.email && true}
                 {...field}
               />
             )}
           />
-          <FormText color='muted'>You can use letters, numbers & periods</FormText>
+          <FormText color='muted'>Puedes usar letras, números & caracteres especiales</FormText>
         </div>
 
         <div className='mb-1'>
           <Label className='form-label' for='contact'>
-            Contact <span className='text-danger'>*</span>
+            Tel: <span className='text-danger'>*</span>
           </Label>
           <Controller
             name='contact'
             control={control}
             render={({ field }) => (
-              <Input id='contact' placeholder='(397) 294-5153' invalid={errors.contact && true} {...field} />
+              <Input id='contact' placeholder='(9) 7424-8493' invalid={errors.contact && true} {...field} />
             )}
           />
         </div>
         <div className='mb-1'>
           <Label className='form-label' for='company'>
-            Company <span className='text-danger'>*</span>
+            Sucursal <span className='text-danger'>*</span>
           </Label>
           <Controller
             name='company'
             control={control}
             render={({ field }) => (
-              <Input id='company' placeholder='Company Pvt Ltd' invalid={errors.company && true} {...field} />
+              <Input id='company' placeholder='Abastible Maipú' invalid={errors.company && true} {...field} />
             )}
           />
         </div>
         <div className='mb-1'>
           <Label className='form-label' for='country'>
-            Country <span className='text-danger'>*</span>
+            Comuna <span className='text-danger'>*</span>
           </Label>
           <Controller
             name='country'
@@ -222,32 +222,32 @@ const SidebarNewUsers = ({ open, toggleSidebar }) => {
         </div>
         <div className='mb-1'>
           <Label className='form-label' for='user-role'>
-            User Role
+            Cargo
           </Label>
           <Input type='select' id='user-role' name='user-role' value={role} onChange={e => setRole(e.target.value)}>
-            <option value='subscriber'>Subscriber</option>
-            <option value='editor'>Editor</option>
-            <option value='maintainer'>Maintainer</option>
-            <option value='author'>Author</option>
-            <option value='admin'>Admin</option>
+            <option value='subscriber'>Operario</option>
+            <option value='editor'>Supervisor</option>
+            <option value='maintainer'>Calderero</option>
+            <option value='author'>Peoneta</option>
+            <option value='admin'>Apilador</option>
           </Input>
         </div>
         <div className='mb-1' value={plan} onChange={e => setPlan(e.target.value)}>
           <Label className='form-label' for='select-plan'>
-            Select Plan
+            Seleccionar Cliente
           </Label>
           <Input type='select' id='select-plan' name='select-plan'>
-            <option value='basic'>Basic</option>
-            <option value='enterprise'>Enterprise</option>
-            <option value='company'>Company</option>
-            <option value='team'>Team</option>
+            <option value='basic'>Abastible</option>
+            <option value='enterprise'>Transantartic</option>
+            <option value='company'>Tw Logística</option>
+            <option value='team'>Prisa Depot</option>
           </Input>
         </div>
         <Button type='submit' className='me-1' color='primary'>
-          Submit
+          Agregar
         </Button>
         <Button type='reset' color='secondary' outline onClick={toggleSidebar}>
-          Cancel
+          Cancelar
         </Button>
       </Form>
     </Sidebar>

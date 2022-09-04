@@ -91,7 +91,7 @@ const CustomHeader = ({ store, toggleSidebar, handlePerPage, rowsPerPage, handle
       <Row>
         <Col xl='6' className='d-flex align-items-center p-0'>
           <div className='d-flex align-items-center w-100'>
-            <label htmlFor='rows-per-page'>Show</label>
+            <label htmlFor='rows-per-page'>Ver</label>
             <Input
               className='mx-50'
               type='select'
@@ -104,7 +104,7 @@ const CustomHeader = ({ store, toggleSidebar, handlePerPage, rowsPerPage, handle
               <option value='25'>25</option>
               <option value='50'>50</option>
             </Input>
-            <label htmlFor='rows-per-page'>Entries</label>
+            <label htmlFor='rows-per-page'>Entradas</label>
           </div>
         </Col>
         <Col
@@ -113,7 +113,7 @@ const CustomHeader = ({ store, toggleSidebar, handlePerPage, rowsPerPage, handle
         >
           <div className='d-flex align-items-center mb-sm-0 mb-1 me-1'>
             <label className='mb-0' htmlFor='search-invoice'>
-              Search:
+              Buscar:
             </label>
             <Input
               id='search-invoice'
@@ -128,12 +128,12 @@ const CustomHeader = ({ store, toggleSidebar, handlePerPage, rowsPerPage, handle
             <UncontrolledDropdown className='me-1'>
               <DropdownToggle color='secondary' caret outline>
                 <Share className='font-small-4 me-50' />
-                <span className='align-middle'>Export</span>
+                <span className='align-middle'>Exportar</span>
               </DropdownToggle>
               <DropdownMenu>
                 <DropdownItem className='w-100'>
                   <Printer className='font-small-4 me-50' />
-                  <span className='align-middle'>Print</span>
+                  <span className='align-middle'>Imprimir</span>
                 </DropdownItem>
                 <DropdownItem className='w-100' onClick={() => downloadCSV(store.data)}>
                   <FileText className='font-small-4 me-50' />
@@ -149,13 +149,13 @@ const CustomHeader = ({ store, toggleSidebar, handlePerPage, rowsPerPage, handle
                 </DropdownItem>
                 <DropdownItem className='w-100'>
                   <Copy className='font-small-4 me-50' />
-                  <span className='align-middle'>Copy</span>
+                  <span className='align-middle'>Copiar</span>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
 
             <Button className='add-new-user' color='primary' onClick={toggleSidebar}>
-              Add New User
+              Agregar
             </Button>
           </div>
         </Col>
@@ -176,9 +176,9 @@ const UsersList = () => {
   const [sortColumn, setSortColumn] = useState('id')
   const [rowsPerPage, setRowsPerPage] = useState(10)
   const [sidebarOpen, setSidebarOpen] = useState(false)
-  const [currentRole, setCurrentRole] = useState({ value: '', label: 'Select Role' })
-  const [currentPlan, setCurrentPlan] = useState({ value: '', label: 'Select Plan' })
-  const [currentStatus, setCurrentStatus] = useState({ value: '', label: 'Select Status', number: 0 })
+  const [currentRole, setCurrentRole] = useState({ value: '', label: 'Seleccionar Cargo' })
+  const [currentPlan, setCurrentPlan] = useState({ value: '', label: 'Seleccionar Sucursal' })
+  const [currentStatus, setCurrentStatus] = useState({ value: '', label: 'Seleccionar Estatus', number: 0 })
 
   // ** Function to toggle sidebar
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen)
@@ -202,7 +202,7 @@ const UsersList = () => {
 
   // ** User filter options
   const roleOptions = [
-    { value: '', label: 'Select Role' },
+    { value: '', label: 'Seleccionar Cargo' },
     { value: 'admin', label: 'Admin' },
     { value: 'author', label: 'Author' },
     { value: 'editor', label: 'Editor' },
@@ -211,7 +211,7 @@ const UsersList = () => {
   ]
 
   const planOptions = [
-    { value: '', label: 'Select Plan' },
+    { value: '', label: 'Seleccionar Sucursal' },
     { value: 'basic', label: 'Basic' },
     { value: 'company', label: 'Company' },
     { value: 'enterprise', label: 'Enterprise' },
@@ -219,7 +219,7 @@ const UsersList = () => {
   ]
 
   const statusOptions = [
-    { value: '', label: 'Select Status', number: 0 },
+    { value: '', label: 'Seleccionar Estatus', number: 0 },
     { value: 'pending', label: 'Pending', number: 1 },
     { value: 'active', label: 'Active', number: 2 },
     { value: 'inactive', label: 'Inactive', number: 3 }
@@ -343,12 +343,12 @@ const UsersList = () => {
     <Fragment>
       <Card>
         <CardHeader>
-          <CardTitle tag='h4'>Filters</CardTitle>
+          <CardTitle tag='h4'>Filtros</CardTitle>
         </CardHeader>
         <CardBody>
           <Row>
             <Col md='4'>
-              <Label for='role-select'>Role</Label>
+              <Label for='role-select'>Cargo</Label>
               <Select
                 isClearable={false}
                 value={currentRole}
@@ -374,7 +374,7 @@ const UsersList = () => {
               />
             </Col>
             <Col className='my-md-0 my-1' md='4'>
-              <Label for='plan-select'>Plan</Label>
+              <Label for='plan-select'>Sucursal</Label>
               <Select
                 theme={selectThemeColors}
                 isClearable={false}
@@ -400,7 +400,7 @@ const UsersList = () => {
               />
             </Col>
             <Col md='4'>
-              <Label for='status-select'>Status</Label>
+              <Label for='status-select'>Estatus</Label>
               <Select
                 theme={selectThemeColors}
                 isClearable={false}

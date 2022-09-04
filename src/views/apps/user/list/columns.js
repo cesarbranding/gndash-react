@@ -95,7 +95,7 @@ export const columns = [
     )
   },
   {
-    name: 'Role',
+    name: 'Rol',
     sortable: true,
     minWidth: '172px',
     sortField: 'role',
@@ -103,7 +103,7 @@ export const columns = [
     cell: row => renderRole(row)
   },
   {
-    name: 'Plan',
+    name: 'Cargo',
     minWidth: '138px',
     sortable: true,
     sortField: 'currentPlan',
@@ -119,7 +119,7 @@ export const columns = [
     cell: row => <span className='text-capitalize'>{row.billing}</span>
   },
   {
-    name: 'Status',
+    name: 'Estatus',
     minWidth: '138px',
     sortable: true,
     sortField: 'status',
@@ -131,7 +131,7 @@ export const columns = [
     )
   },
   {
-    name: 'Actions',
+    name: 'Accciones',
     minWidth: '100px',
     cell: row => (
       <div className='column-action'>
@@ -147,11 +147,11 @@ export const columns = [
               onClick={() => store.dispatch(getUser(row.id))}
             >
               <FileText size={14} className='me-50' />
-              <span className='align-middle'>Details</span>
+              <span className='align-middle'>Detalles</span>
             </DropdownItem>
             <DropdownItem tag='a' href='/' className='w-100' onClick={e => e.preventDefault()}>
               <Archive size={14} className='me-50' />
-              <span className='align-middle'>Edit</span>
+              <span className='align-middle'>Editar</span>
             </DropdownItem>
             <DropdownItem
               tag='a'

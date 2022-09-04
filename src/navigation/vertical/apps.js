@@ -9,7 +9,7 @@ export default [
     id: 'listadp-dtBasic',
     title: 'Listado',
     icon: <Users size={12} />,
-    navLink: '/datatables/basic'
+    navLink: '/apps/user/list'
   },
   {
     id: 'cpd-tablesReactstrap',

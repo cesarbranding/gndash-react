@@ -141,7 +141,7 @@ const Sidebar = props => {
         >
           <Row>
             <Col sm='12'>
-              <h6 className='filter-heading d-none d-lg-block'>Filters</h6>
+              <h6 className='filter-heading d-none d-lg-block'>Filtros</h6>
             </Col>
           </Row>
           <Card>
