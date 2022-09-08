@@ -15,7 +15,7 @@ export default [
     id: 'cpd-tablesReactstrap',
     title: 'CPD',
     icon: <Clipboard size={20} />,
-    navLink: '/tables/reactstrap'
+    navLink: '/apps/invoice/list' 
   },
   {
     id: 'ca-tablesReactstrap',

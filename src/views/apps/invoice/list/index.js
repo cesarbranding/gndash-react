@@ -27,7 +27,7 @@ const CustomHeader = ({ handleFilter, value, handleStatusValue, statusValue, han
       <Row>
         <Col lg='6' className='d-flex align-items-center px-0 px-lg-1'>
           <div className='d-flex align-items-center me-2'>
-            <label htmlFor='rows-per-page'>Show</label>
+            <label htmlFor='rows-per-page'>Ver</label>
             <Input
               type='select'
               id='rows-per-page'

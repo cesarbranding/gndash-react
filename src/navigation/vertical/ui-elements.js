@@ -9,7 +9,7 @@ export default [
     id: 'solicitudes-dtBasic',
     title: 'Solicitudes',
     icon: <FolderPlus size={12} />,
-    navLink: '/apps/todo'
+    navLink: '/tables/reactstrap'
   },
   {
     id: 'req-kanban',
